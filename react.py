@@ -14,4 +14,4 @@ def triple(num:float) -> float:
 tools = [TavilySearch(max_results=1), triple]
 
 llm = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", temperature=0)
-llm.bind_tools(tools)
+llm = llm.bind_tools(tools)
